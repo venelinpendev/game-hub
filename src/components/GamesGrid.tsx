@@ -8,6 +8,7 @@ import { GameQuery } from "../App";
 interface Props {
   gameQuery: GameQuery;
 }
+
 const GamesGrid = ({ gameQuery }: Props) => {
   const { data: games, error, isLoading } = useGames(gameQuery);
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
